@@ -76,4 +76,8 @@ SLI request process finished
 
 The [Serverless](https://www.serverless.com/) framework is included together with the [express-serverless](https://github.com/vendia/serverless-express/) package. Unfortunately due to all the services that are required to test (IFPS, Chainlink, EVM node etc) it is really hard to demonstrate this capability. The `par-peg-adapter` features a `index.local.ts` that starts up a normal Express server instead for local testing.
 
+### Final notes
 
+To actually use this in the real world we should have more data sources to verify the PAR price from, simply trusting Coingecko is not sufficient. We could query exchanges (onchain/offchain) directly instead.
+
+I was not sure about the all the parameters in the `contracts/messengers/par-peg-messenger/use-case-spec.json` so I left the default values. Same for the SLA values in `scripts.config.ts`.

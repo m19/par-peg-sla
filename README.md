@@ -1,6 +1,8 @@
 # PAR Peg SLA
 
-Forked from https://github.com/Stacktical/stacktical-dsla-developer-toolkit
+Forked from https://github.com/Stacktical/stacktical-dsla-developer-toolkit for the [Dubai Defi hackaton](https://dubaidefi.io/). This adds a [par-peg-adapter](services/par-peg-adapter) so you can get the SLI of the PAR Peg. 
+
+Our SLA example in `scripts.config.ts` verifies that the price of PAR stays above €0.99 for our defined period.
 
 ## Quick start
 
